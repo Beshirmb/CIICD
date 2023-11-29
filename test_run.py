@@ -1,7 +1,7 @@
 """
 Tests
 """
-from run import import_data, rename_columns, get_sample
+from run import import_data, rename_columns, get_sample, multiply_dataset
 
 def test_import_data():
     """
@@ -25,3 +25,11 @@ def test_get_sample():
     data = import_data()
     data_sample = get_sample(data)
     
+def test_multiply_dataset():
+    """
+    Test
+    """
+    data = import_data()
+    data_sample = get_sample(data)
+    data_multiply = multiply_dataset(data_sample)
+
