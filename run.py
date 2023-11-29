@@ -43,8 +43,9 @@ def get_sample(dataset, sample_size=50):
      Returns:
      A DataFrame representing the sample.
     """
-    print(dataset.head(sample_size))
-    return get_sample
+    return dataset.head(sample_size)
+
+
 
 if __name__ == '__main__':
     """
