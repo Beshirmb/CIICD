@@ -1,3 +1,3 @@
-Lahmadi Youssef /n
-MBARKI Beshir /n
-COULIBALY Mohamed
+1. Lahmadi Youssef
+2. MBARKI Beshir
+3. COULIBALY Mohamed
