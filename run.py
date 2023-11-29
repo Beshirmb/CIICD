@@ -45,7 +45,21 @@ def get_sample(dataset, sample_size=50):
     """
     return dataset.head(sample_size)
 
+import pandas as pd
 
+def multiply_dataset(sample_dataset, num_times=3):
+    """
+    This function multiplies the sample dataset by the specified number of times using pd.concat.
+    
+    Args:
+    - sample_dataset: A pandas DataFrame representing the dataset to multiply.
+    - num_times: The number of times to multiply the dataset. By default, it is 3.
+    
+    Returns:
+    A new DataFrame representing the multiplied dataset.
+    """
+    multiplied_dataset = pd.concat([sample_dataset] * num_times, ignore_index=True)
+    return multiplied_dataset
 
 if __name__ == '__main__':
     """
