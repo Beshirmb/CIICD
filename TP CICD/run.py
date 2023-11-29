@@ -19,7 +19,6 @@ def import_data():
     print(data.shape)
     return data
 
-
 if __name__ == '__main__':
     """
     Doc
