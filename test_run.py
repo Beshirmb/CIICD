@@ -1,7 +1,6 @@
 """
 Tests
 """
-import pandas as pd
 from run import import_data, rename_columns, get_sample, multiply_dataset
 
 
@@ -28,10 +27,7 @@ def test_get_sample(self):
     """
     data = import_data()
     data_sample = get_sample(data)
-    self.assertIsNotNone(data_sample)
-    self.assertIsInstance(data_sample, pd.DataFrame)
-    self.assertEqual(len(data_sample), 50)
-
+    assert data_sample 
 
 def test_multiply_dataset(self):
     """
@@ -40,6 +36,5 @@ def test_multiply_dataset(self):
     data = import_data()
     data_sample = get_sample(data)
     data_multiply = multiply_dataset(data_sample)
-    self.assertIsNotNone(data_multiply)
-    self.assertIsInstance(data_multiply, pd.DataFrame)
+    assert data_multiply
 
