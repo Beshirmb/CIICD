@@ -29,6 +29,7 @@ def test_get_sample():
     data_sample = get_sample(data)
     assert len(data_sample)
 
+
 def test_multiply_dataset():
     """
     Test
