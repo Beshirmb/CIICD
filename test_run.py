@@ -21,20 +21,20 @@ def test_rename_columns():
     assert "sepal_length" in data_renamed.columns
 
 
-def test_get_sample(self):
+def test_get_sample():
     """
     Test
     """
     data = import_data()
     data_sample = get_sample(data)
-    self.assertEqual(len(data_sample), 50)
+    assert (len(data_sample), 50)
 
-def test_multiply_dataset(self):
+def test_multiply_dataset():
     """
     Test
     """
     data = import_data()
     data_sample = get_sample(data)
     data_multiply = multiply_dataset(data_sample)
-    self.assertEqual(len(data_multiply), len(data_sample) * 2, "Number of rows is not doubled.")
+    assert (len(data_multiply), len(data_sample) * 2, "Number of rows is not doubled.")
 
