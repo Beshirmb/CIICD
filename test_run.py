@@ -21,7 +21,7 @@ def test_rename_columns():
     assert "sepal_length" in data_renamed.columns
 
 
-def test_get_sample(self):
+def test_get_sample():
     """
     Test
     """
@@ -29,7 +29,7 @@ def test_get_sample(self):
     data_sample = get_sample(data)
     assert data_sample 
 
-def test_multiply_dataset(self):
+def test_multiply_dataset():
     """
     Test
     """
