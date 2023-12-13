@@ -27,7 +27,9 @@ def test_get_sample():
     """
     data = import_data()
     data_sample = get_sample(data)
-
+    self.assertIsNotNone(data_sample)
+    self.assertIsInstance(data_sample, pd.DataFrame)  # Make sure it's a DataFrame
+    self.assertEqual(len(data_sample), 50)
 
 def test_multiply_dataset():
     """
@@ -36,4 +38,7 @@ def test_multiply_dataset():
     data = import_data()
     data_sample = get_sample(data)
     data_multiply = multiply_dataset(data_sample)
+    self.assertIsNotNone(data_multiply)
+    self.assertIsInstance(data_multiply, pd.DataFrame)
+    self.assertEqual(len(data_multiply), len(data_sample) * 2)
 
