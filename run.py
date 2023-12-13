@@ -59,7 +59,6 @@ def multiply_dataset(sample_dataset, num_times=3):
     multiplied_dataset = pd.concat([sample_dataset] * num_times, ignore_index=True)
     return multiplied_dataset
     
-
 if __name__ == '__main__':
     """
     Doc
