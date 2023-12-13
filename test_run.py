@@ -1,6 +1,7 @@
 """
 Tests
 """
+import pandas as pd
 from run import import_data, rename_columns, get_sample, multiply_dataset
 
 
