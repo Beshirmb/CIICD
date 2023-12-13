@@ -26,9 +26,9 @@ def rename_columns(data: pd.DataFrame) -> pd.DataFrame:
     """
     Doc
     """
-    data_renamed = data.rename(columns={"sepal.length": 'sepal_length', 
-                                        "sepal.width": 'sepal_width', 
-                                        "petal.length": 'petal_length', 
+    data_renamed = data.rename(columns={"sepal.length": 'sepal_length',
+                                        "sepal.width": 'sepal_width',
+                                        "petal.length": 'petal_length',
                                         "petal.width": 'petal_width'})
     return data_renamed
 
@@ -36,13 +36,11 @@ def rename_columns(data: pd.DataFrame) -> pd.DataFrame:
 def get_sample(dataset, sample_size=50):
     """
     This function takes a portion of the dataset (sample) of the specified size.
-    
-     Args:
-     - dataset: A pandas DataFrame representing the dataset.
-     - sample_size: The size of the sample to extract. By default, it is 50.
-     
-     Returns:
-     A DataFrame representing the sample.
+    Args:
+    - dataset: A pandas DataFrame representing the dataset.
+    - sample_size: The size of the sample to extract. By default, it is 50.
+    Returns:
+    A DataFrame representing the sample.
     """
     return dataset.head(sample_size)
 
