@@ -3,13 +3,15 @@ CI/CD
 """
 import pandas as pd
 
+
 def main():
     """
     Main
     """
     data = import_data()
     data = rename_columns(data)
-    
+
+
 def import_data() -> pd.DataFrame:
     """
     Import csv file as a dataframe
@@ -19,17 +21,14 @@ def import_data() -> pd.DataFrame:
     print(data.shape)
     return data
 
+
 def rename_columns(data: pd.DataFrame) -> pd.DataFrame:
     """
     Doc
     """
-    data_renamed = data.rename(columns={"sepal.length": 'sepal_length',
-                                "sepal.width": 'sepal_width',
-                                "petal.length": 'petal_length',
-                                "petal.width": 'petal_width'})
+    data_renamed = data.rename(columns={"sepal.length": 'sepal_length', "sepal.width": 'sepal_width', "petal.length": 'petal_length', "petal.width": 'petal_width'})
     return data_renamed
 
-import pandas as pd
 
 def get_sample(dataset, sample_size=50):
     """
@@ -44,7 +43,6 @@ def get_sample(dataset, sample_size=50):
     """
     return dataset.head(sample_size)
 
-import pandas as pd
 
 def multiply_dataset(sample_dataset, num_times=3):
     """
