@@ -27,7 +27,7 @@ def test_get_sample():
     """
     data = import_data()
     data_sample = get_sample(data)
-    assert (len(data_sample), 50)
+    assert len(data_sample)
 
 def test_multiply_dataset():
     """
@@ -36,5 +36,5 @@ def test_multiply_dataset():
     data = import_data()
     data_sample = get_sample(data)
     data_multiply = multiply_dataset(data_sample)
-    assert (len(data_multiply), len(data_sample) * 2, "Number of rows is not doubled.")
+    assert len(data_multiply), len(data_sample) * 2, "Number of rows is not doubled."
 
