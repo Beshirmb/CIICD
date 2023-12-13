@@ -9,7 +9,6 @@ def main():
     """
     data = import_data()
     data = rename_columns(data)
-
     
 def import_data() -> pd.DataFrame:
     """
